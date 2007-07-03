@@ -6,12 +6,13 @@ version_from 'lib/Egg/Plugin/IxHash.pm';
 author       'Masatoshi Mizuno E<lt>lusheE<64>cpan.orgE<gt>';
 license      'perl';
 
-requires 'Egg::Release' => 2.00;
+requires 'Egg::Release'       => 2.00;
+requires 'Tie::Hash::Indexed' => 0.04;
 
 build_requires 'Test::More';
 build_requires 'Test::Pod';
-# build_requires 'Test::Perl::Critic';
-# build_requires 'Test::Pod::Coverage';
+build_requires 'Test::Perl::Critic';
+build_requires 'Test::Pod::Coverage';
 
 use_test_base;
 auto_include;
