@@ -1,6 +1,6 @@
 ---
 name: Egg-Plugin-IxHash
-version: 2.01
+version: 2.02
 author:
   - 'Masatoshi Mizuno E<lt>lusheE<64>cpan.orgE<gt>'
 abstract: Tie::Hash::Indexed for Egg plugin.
@@ -17,7 +17,7 @@ requires:
 provides:
   Egg::Plugin::IxHash:
     file: lib/Egg/Plugin/IxHash.pm
-    version: 2.01
+    version: 2.02
 generated_by: Module::Build version 0.2805
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

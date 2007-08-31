@@ -10,7 +10,7 @@ use warnings;
 use Carp qw/croak/;
 use Tie::Hash::Indexed;
 
-our $VERSION = '2.01';
+our $VERSION = '2.02';
 
 =head1 NAME
 
@@ -37,7 +37,8 @@ HASH is returned and the HASH reference of receipt Tie::Hash::Indexed is returne
 sub ixhash {
 	my $e= shift;
 	tie my %ixHash, 'Tie::Hash::Indexed';
-	%ixHash= $_[0] ? @_: croak q{ I want HASH data. };
+	return \%ixHash unless @_;
+	%ixHash= @_;
 	\%ixHash;
 }
 
