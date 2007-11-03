@@ -10,7 +10,7 @@ use warnings;
 use Carp qw/croak/;
 use Tie::Hash::Indexed;
 
-our $VERSION = '2.02';
+our $VERSION = '2.03';
 
 =head1 NAME
 
